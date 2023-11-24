@@ -101,13 +101,6 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                             role="button"
                             id="moreButton"
                         />
-                        <ContextualMenu
-                            items={menuItems}
-                            hidden={!showContextualMenu}
-                            target={"#moreButton"}
-                            onItemClick={toggleClearAllDialog}
-                            onDismiss={onHideContextualMenu}
-                        />
                         <CommandBarButton
                             iconProps={{ iconName: 'Cancel' }}
                             title={"Hide"}
